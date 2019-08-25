@@ -2,20 +2,20 @@
   <div class="order-aside">
     <p class="logo-text">LOGO</p>
     <div class="aside-user">
-      <img src="https://img.alicdn.com/tfs/TB1eyjzDkvoK1RjSZFDXXXY3pXa-600-600.png" alt="">
+      <img src="https://c-ssl.duitang.com/uploads/item/201412/30/20141230172716_AyFuU.jpeg" alt="">
       <div class="user-detail">
         <p>淘小宝</p>
         <p>技术部</p>
       </div> 
     </div>
-    <!-- 侧边导航列表 -->
+    <!-- 导航列表 -->
     <el-col>
       <el-menu
-        default-active="/"
+        :default-active="$route.path"
         class="el-menu-vertical-demo"
         background-color="#fff"
         text-color="#5584ff"
-        router
+        :router="true"
         >
         <el-menu-item index="/">
           <i class="el-icon-document"></i>

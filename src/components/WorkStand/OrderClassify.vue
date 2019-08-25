@@ -1,12 +1,12 @@
 <template>
-    <div>
-        <v-chart :forceFit="true" :height="height" :padding="padding" :data="data" :scale="scale">
-            <v-axis />
-            <v-tooltip :crosshairs="true"></v-tooltip>
-            <v-area position="year*value" color="type" shape="smooth"></v-area>
-            <v-line position="year*value" color="type" size="2" shape="smooth"></v-line>
-        </v-chart>
-    </div>
+  <div>
+    <v-chart :forceFit="true" :height="height" :padding="padding" :data="data" :scale="scale">
+      <v-axis />
+      <v-tooltip :crosshairs="true"></v-tooltip>
+      <v-area position="year*value" color="type" shape="smooth"></v-area>
+      <v-line position="year*value" color="type" size="2" shape="smooth"></v-line>
+    </v-chart>
+  </div>
 </template>
 
 <script>
@@ -42,6 +42,7 @@ const scale = [
     dataKey: "value",
     alias: "The Share Price in Dollars",
     min: 20,
+    tickInterval: 20,
     formatter: val =>  val
   },
   {

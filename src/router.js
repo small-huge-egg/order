@@ -5,13 +5,10 @@ Vue.use(Router)
  
 export default new Router({
   routes: [
+    
     {
       path: '/',
-      redirect: '/Index'
-    },
-    {
-      path: '/Index',
-      component: () => import('./pages/Index.vue')
+      component: () => import('./pages/WorkStand.vue')
     },
     {
       path: '/indentTable',
